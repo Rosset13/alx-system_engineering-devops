@@ -1,6 +1,6 @@
 # connect to a server without typing a password
 Host 455074-web-01
 User ubuntu
-HostName 184.72.115.66
+HostName 52.3.240.18
 IdentityFile ~/.ssh/school
 PasswordAuthentication no
