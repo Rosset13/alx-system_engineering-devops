@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Install Nginx
+apt-get update
+apt-get -y install nginx
+
+# Configure Nginx to listen on port 80 and serve "Hello World!"
+echo "server {
+    listen 80;
+    server_name _;
+
+    location / {
+        echo \"Hello World!\";
+    }
+}" > /etc/nginx/sites-available/default
+
+# Restart Nginx
+service nginx restart
