@@ -1,0 +1,19 @@
+ So, when you type "https://www.google.com" into your browser and hit Enter, it triggers a series of events that take place behind the scenes to bring up the Google homepage.
+
+First off, your browser needs to figure out where "www.google.com" is located on the internet. It does this by sending a request to a DNS (Domain Name System) server, which acts like a big phone book for the internet. This server returns the IP address associated with "www.google.com".
+
+Next, your browser establishes a connection to that IP address using TCP/IP, a set of protocols that ensure reliable communication between your browser and the server.
+
+Before your browser can communicate with the server, it may need to pass through a firewall, which acts as a barrier to filter incoming and outgoing network traffic based on predefined security rules.
+
+Now, if the URL starts with "https://", it means that the communication between your browser and the server is encrypted using SSL (Secure Sockets Layer) or TLS (Transport Layer Security), ensuring that your data remains secure during transit.
+
+Once your browser has established a secure connection, it sends a request to the server. But here's the thing – big websites like Google often have multiple servers to handle all the incoming traffic. That's where a load balancer comes in. It distributes incoming requests across all those servers to ensure optimal performance and reliability.
+
+Once your request reaches the server, it's processed by a web server software like Apache or Nginx. This server retrieves all the necessary files – HTML, CSS, JavaScript, etc. – to render the Google homepage.
+
+But what about dynamic content? That's where application servers come into play. They handle things like user authentication, personalized content, and interactions with databases.
+
+And speaking of databases, many websites need to store and retrieve data. That's where databases like MySQL or MongoDB come in handy. They store all the structured data that the web application needs.
+
+So, in a nutshell, that's what happens when you type "https://www.google.com" into your browser and hit Enter! It's a fascinating journey through the various components of the web stack.
