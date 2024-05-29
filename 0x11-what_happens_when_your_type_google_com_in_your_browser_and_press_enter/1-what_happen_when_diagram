@@ -1,0 +1,4 @@
+I've created a schema illustrating the flow of a request when typing 'https://www.google.com' into the browser and pressing Enter.
+First, the browser initiates DNS resolution to translate the domain name 'www.google.com' into an IP address. Then, it sends an encrypted HTTP request to the server's IP address on the appropriate port (typically port 443 for HTTPS). The traffic passes through a firewall for security measures before being distributed via a load balancer to ensure high availability.
+Once received by the web server, it serves a web page back to the browser. Behind the scenes, the web server communicates with an application server, which generates the content of the web page. Additionally, the application server interacts with a database to retrieve necessary data for dynamic content generation.
+
