@@ -1,1 +1,0 @@
-This repository includes all the tasks required to learn advanced operations and techniques for working with APIs. By working through these projects, you will learn how to make API requests, parse JSON data, and automate repetitive tasks. Additionally, you will become familiar with working with some of the most popular APIs, such as Twitter and Wikimedia. Happy Learning!
