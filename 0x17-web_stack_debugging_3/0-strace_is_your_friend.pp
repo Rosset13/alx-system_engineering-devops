@@ -1,6 +1,6 @@
-exec { 'create-uploads-directory':
-  command => '/bin/mkdir -p /var/www/html/wp-content/uploads && /bin/chown -R www-data:www-data /var/www/html/wp-content/uploads',
-  path    => ['/bin', '/usr/bin'],
-  onlyif  => 'test ! -d /var/www/html/wp-content/uploads',
-}
+# Fixes bad `phpp` extensions to `php` in the WordPress file `wp-settings.php`.
 
+exec { 'fix-wordpress':
+  command => 'sed -i s/phpp/php/g /var/www/html/wp-settings.php',
+  path    => '/usr/local/bin/:/bin/'
+}
